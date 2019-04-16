@@ -161,6 +161,7 @@ export default class CycleScrollView extends cc.Component {
             else
             {
                 item.setPositionX(this.itemTemplateNode.width / 2 + this.itemDis * curDataIdx);
+                // cc.log("zx_ posX: ", item.x);
             }
             // 刷新子节点信息
             this.refreshTemp(item, this.itemDatas[curDataIdx]);

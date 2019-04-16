@@ -1,4 +1,3 @@
-import MyScrollView from "./MyScrollView";
 import CycleScrollView from "./CycleScrollView";
 
 // Learn TypeScript:
@@ -24,9 +23,6 @@ export default class TestMyScroll extends cc.Component {
 
     @property(cc.Node)
     item: cc.Node = null;
-
-    @property(MyScrollView)
-    scroll: MyScrollView = null;
 
     @property(CycleScrollView)
     vScroll: CycleScrollView = null;
@@ -123,7 +119,7 @@ export default class TestMyScroll extends cc.Component {
     {
         // let node: cc.Node = cc.instantiate(this.item);
         let node: cc.Node = new cc.Node();
-        node.setContentSize(cc.size(40, 150));
+        node.setContentSize(cc.size(80, 150));
         let lab:cc.Label = node.addComponent(cc.Label);
         TestMyScroll.nodeName++;
         node.name = "node" + TestMyScroll.nodeName;
