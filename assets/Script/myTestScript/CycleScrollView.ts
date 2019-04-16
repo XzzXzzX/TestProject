@@ -30,7 +30,7 @@ export default class CycleScrollView extends cc.Component {
     /**
      * 自动滚动时间
      */
-    scrollTime: number = 0;
+    scrollTime: number = 0.5;
 
     /**
      * 滚动窗方向
