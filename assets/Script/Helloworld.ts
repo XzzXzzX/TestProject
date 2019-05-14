@@ -12,5 +12,7 @@ export default class Helloworld extends cc.Component {
     start () {
         // init logic
         this.label.string = this.text;
+        this.label.node.scale = 0.5;
+        cc.log("zx_ ", this.label.node.scale, this.node.scaleX,this.node.scaleY);
     }
 }
